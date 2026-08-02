@@ -12,13 +12,22 @@ layers:
     - {t: K, h: ALT}
     - {t: L, h: '$$mdi:apple-keyboard-control$$'}
     - {t: ;, h: '$$mdi:microsoft-windows$$'}
-  - [Z, X, C, V, B, N, M, ',', ., /]
-  - - Meh+ $$mdi:microsoft-windows$$
-    - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: NUM}
+  - - {t: Z, h: NUM}
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - /
+  - - {t: '$$mdi:keyboard-esc$$', h: 'Meh+ $$mdi:microsoft-windows$$'}
+    - {t: '$$mdi:keyboard-space$$', h: NAV}
     - $$mdi:keyboard-tab$$
     - ENTER
     - $$mdi:keyboard-space$$
-    - FUN
+    - $$mdi:backspace-outline$$
   NUM:
   - - '`'
     - '@'
@@ -40,7 +49,7 @@ layers:
     - {t: '5', h: ALT}
     - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
     - '-'
-  - - ''''
+  - - {t: '''', type: held}
     - '&'
     - '['
     - ']'
@@ -51,7 +60,7 @@ layers:
     - '3'
     - '='
   - - {t: '$$mdi:chevron-down$$', type: trans}
-    - {type: held}
+    - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
@@ -72,7 +81,7 @@ layers:
   - ['', '$$mdi:skip-backward$$', '$$mdi:play-pause$$', '$$mdi:skip-forward$$', '', '', '$$mdi:format-horizontal-align-right$$', '', '$$mdi:format-vertical-align-bottom$$',
     '']
   - - {t: '$$mdi:chevron-down$$', type: trans}
-    - ''
+    - {type: held}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - ''
@@ -108,12 +117,7 @@ layers:
     - F2
     - F3
     - F10
-  - - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - {type: held}
+  - ['', '', '', '', '', '']
   MAC:
   - ['', '', '$$mdi:folder-home$$', '', '', '', '', '', '', '']
   - ['$$mdi:cog$$', '$$mdi:console$$', '$$mdi:spotify$$', '', '', '', '', '$$mdi:store-settings$$', '', '']
