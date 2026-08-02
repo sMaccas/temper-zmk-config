@@ -317,8 +317,8 @@
             bindings = <
 &kp Q             &kp W                 &kp E            &kp R             &kp T      &kp Y      &kp U              &kp I            &kp O                  &kp P
 &weak LEFT_GUI A  &weak LEFT_CONTROL S  &hm RIGHT_ALT D  &hm LEFT_SHIFT F  &kp G      &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_ALT K  &weak RIGHT_CONTROL L  &weak LEFT_GUI SEMI
-&kp Z             &kp X                 &kp C            &kp V             &kp B      &kp N      &kp M              &kp COMMA        &kp DOT                &kp FSLH
-                                        &kp LHYP         &tog_num          &kp TAB  &kp ENTER  &kp SPACE          &mo 3
+&weak NUM Z       &kp X                 &kp C            &kp V             &kp B      &kp N      &kp M              &kp COMMA        &kp DOT                &kp FSLH
+                                        &tm LHYP ESC     &tm NAV SPACE     &kp TAB    &kp ENTER  &kp SPACE          &kp BACKSPACE
             >;
         };
 
