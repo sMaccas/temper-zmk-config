@@ -8,8 +8,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "specialkeys.dtsi"
+//#include "homerowmods.dtsi"
+#include "autoshift.dtsi"
 
-#define DEF 0
+#define QWERTY 0
 #define NUM 1
 #define NAV 2
 #define FUN 3
@@ -310,12 +313,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "DEF";
+            display-name = "QWERTY";
             bindings = <
 &kp Q             &kp W                 &kp E            &kp R             &kp T      &kp Y      &kp U              &kp I            &kp O                  &kp P
 &weak LEFT_GUI A  &weak LEFT_CONTROL S  &hm RIGHT_ALT D  &hm LEFT_SHIFT F  &kp G      &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_ALT K  &weak RIGHT_CONTROL L  &weak LEFT_GUI SEMI
 &kp Z             &kp X                 &kp C            &kp V             &kp B      &kp N      &kp M              &kp COMMA        &kp DOT                &kp FSLH
-                                        &kp TAB          &tog_num          &kp SPACE  &kp ENTER  &borrar            &mo 3
+                                        &kp LHYP         &tog_num          &kp TAB  &kp ENTER  &kp SPACE          &mo 3
             >;
         };
 
