@@ -135,17 +135,3 @@
     };
   };
 };
-
-// Next are keys I want to modify their standard behavior, like sending an `@`
-// character when pressing the number `9` with a shift modifier, instead of a
-// `(` one. All behaviors defined for the sole purpose of redefining a single
-// key will be prefixed with `kp_` to make it easy to identify them.
-/ {
-  behaviors {
-    // Make the `BACKSPACE` key behaves like `DEL`, when holding shift down.
-    // This mimics the standard backspace behavior on Mac Books.
-    DEFINE_SHIFT_KEY(kp_bspcdel, &kp BACKSPACE, &kp DELETE);
-
-    };
-  };
-};
