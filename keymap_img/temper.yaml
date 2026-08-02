@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: temper}
 layers:
-  DEF:
+  QWERTY:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: '$$mdi:microsoft-windows$$'}
     - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -13,11 +13,11 @@ layers:
     - {t: L, h: '$$mdi:apple-keyboard-control$$'}
     - {t: ;, h: '$$mdi:microsoft-windows$$'}
   - [Z, X, C, V, B, N, M, ',', ., /]
-  - - $$mdi:keyboard-tab$$
+  - - Meh+ $$mdi:microsoft-windows$$
     - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: NUM}
-    - $$mdi:keyboard-space$$
+    - $$mdi:keyboard-tab$$
     - ENTER
-    - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-outline$$'}
+    - $$mdi:keyboard-space$$
     - FUN
   NUM:
   - - '`'
@@ -75,7 +75,7 @@ layers:
     - ''
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
-    - {type: held}
+    - ''
     - ''
   FUN:
   - - $$mdi:progress-download$$
@@ -127,24 +127,24 @@ layers:
 combos:
 - p: [14, 15]
   k: $$mdi:apple-keyboard-caps$$
-  l: [DEF]
+  l: [QWERTY]
   a: top
   o: 1.0
 - p: [20, 21]
   k: $$mdi:content-cut$$
-  l: [DEF]
+  l: [QWERTY]
 - p: [21, 22]
   k: $$mdi:content-copy$$
-  l: [DEF]
+  l: [QWERTY]
 - p: [22, 23]
   k: $$mdi:content-paste$$
-  l: [DEF]
+  l: [QWERTY]
 - p: [10, 11]
   k: $$mdi:content-save$$
-  l: [DEF]
+  l: [QWERTY]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
-  l: [DEF, NUM]
+  l: [QWERTY, NUM]
 - p: [1, 0]
   k: $$mdi:close-box-outline$$
   l: [NAV]
@@ -169,16 +169,16 @@ combos:
   hidden: true
 - p: [16, 17]
   k: $$mdi:arrow-left-bold-box-outline$$
-  l: [NAV, DEF, NUM]
+  l: [NAV, QWERTY, NUM]
 - p: [17, 18]
   k: $$mdi:arrow-right-bold-box-outline$$
-  l: [DEF, NAV, FUN]
+  l: [QWERTY, NAV, FUN]
 - p: [11, 12]
   k: Ctl+ Z
-  l: [DEF, NAV, NUM]
+  l: [QWERTY, NAV, NUM]
 - p: [12, 13]
   k: Ctl+ Y
-  l: [DEF, NAV, NUM]
+  l: [QWERTY, NAV, NUM]
 - p: [1, 2]
   k: $$mdi:refresh$$
   l: [NUM, NAV]
